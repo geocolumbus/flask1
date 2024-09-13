@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rm -rf flask1.tar
+podman build -t flask1 .
+podman save --output flask1.tar flask1
+
